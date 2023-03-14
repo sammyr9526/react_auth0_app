@@ -17,7 +17,11 @@ root.render(
   >
     <Router>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route
+          path="react-auth0-app.vercel.app
+/home"
+          element={<Home />}
+        />
         <Route path="/" element={<App />} />
       </Routes>
     </Router>
