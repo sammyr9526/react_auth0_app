@@ -6,9 +6,8 @@ const Profile = () => {
 
   return (
     isAuthenticated && (
-      <div>
-        <h2>Welcome {user.name}</h2>
-        <p>{user.email}</p>
+      <div className="text-slate-50 justify-center flex mt-5">
+        <h1>Welcome {user.name}</h1>
       </div>
     )
   );
