@@ -13,15 +13,11 @@ root.render(
   <Auth0Provider
     domain={domain}
     clientId={clientId}
-    redirectUri={"react-auth0-app.vercel.app/home"}
+    redirectUri={"http://localhost:3000/home"}
   >
     <Router>
       <Routes>
-        <Route
-          path="react-auth0-app.vercel.app
-/home"
-          element={<Home />}
-        />
+        <Route path="/home" element={<Home />} />
         <Route path="/" element={<App />} />
       </Routes>
     </Router>

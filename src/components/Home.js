@@ -14,16 +14,20 @@ const Home = () => {
   const [option2, setOption2] = useState("dog");
   const [imgpet, setImgPet] = useState();
 
-  const changePet = () => {
+  const changePet = async () => {
     if (option === "cat") {
       setOption("dog");
       setPeturl("https://dog.ceo/api/breeds/image/random");
-      setOption2("cats");
+      await setTimeout(() => {
+        setOption2("cats");
+      }, 1000);
     }
     if (option === "dog") {
       setOption("cat");
       setPeturl("https://api.thecatapi.com/v1/images/search");
-      setOption2("dogs");
+      setTimeout(() => {
+        setOption2("dogs");
+      }, 1000);
     }
   };
 
