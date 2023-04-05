@@ -8,7 +8,7 @@ const Logout = () => {
         className="mt-3 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded"
         onClick={() =>
           logout({
-            logoutParams: { returnTo: "http://localhost:3000" },
+            logoutParams: { returnTo: "https://react-auth0-app.vercel.app/" },
           })
         }
       >
